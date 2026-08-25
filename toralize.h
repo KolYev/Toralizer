@@ -16,3 +16,10 @@ struct proxy_request {
     int32 dstip;
     unsigned char userid[8];
 };
+
+struct proxy_response {
+    int8 vn;
+    int8 cd;
+    int16 _;
+    int32 __;
+};
