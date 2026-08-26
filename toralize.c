@@ -25,4 +25,6 @@ int main(int argc, char *argv[]) {
     sock.sin_family = AF_INET;
     sock.sin_port = htons(PROXYPORT);
     sock.sin_addr.s_addr = inet_addr(PROXY);
+
+    connect(s, (struct sockaddr *)&sock, sizeof(sock));
 }
